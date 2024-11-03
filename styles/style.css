@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  padding: 0px; margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 p,
@@ -45,13 +46,13 @@ figure {
   inset-inline-end: var(--mar_padd_);
   padding-inline: var(--mar_padd_);
   z-index: 1;
-}
-
-.decorated-zone {
   block-size: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.decorated-zone {
   color: var(--text-color);
 }
 
