@@ -330,7 +330,13 @@ span {
 
   section p:first-of-type span {
     margin-block-start: 10px;
-    }
+  }
+
+  .header__theme-menu {
+    inline-size: calc(100vw - 40px);
+  }
+  
+    
 }
 
 @media (768px <= width ) and (orientation: portrait) {
