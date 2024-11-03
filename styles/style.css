@@ -57,6 +57,10 @@ figure {
   grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.266467* 100dvh) 1fr calc(0.266467* 100dvh) calc(25px + var(--mar_padd_));
 }
 
+.footer.decorated-zone {
+  grid-template-rows: calc(25px + var(--mar_padd_)) 1fr calc(25px + var(--mar_padd_));
+}
+
 .decorated-zone:before {
   content: '';
   inline-size: 25px;
@@ -275,8 +279,7 @@ span {
 }
 
 @media (768px <= width) {
-  .header__title {
-    inline-size: calc(100dvw - 40px);
+  .header > .header__title {
     position: relative;
     inset-inline-end: 20px;
   }
@@ -339,6 +342,10 @@ span {
     grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.38085938 * 100dvh) 1fr calc(0.38085938 * 100dvh) calc(25px + var(--mar_padd_));
   }
 
+  footer.decorated-zone {
+    grid-template-rows: calc(25px + var(--mar_padd_)) 1fr calc(25px + var(--mar_padd_));
+  }
+
 
 }
 
@@ -349,6 +356,10 @@ span {
 
   .decorated-zone {
     grid-template-rows: calc(25px + var(--mar_padd_)) 1fr 1fr 1fr calc(25px + var(--mar_padd_));
+  }
+
+  footer.decorated-zone {
+    grid-template-rows: calc(25px + var(--mar_padd_)) 1fr calc(25px + var(--mar_padd_));
   }
 
 }
