@@ -12,6 +12,7 @@ body {
   margin: 0;
 }
 
+body,
 p,
 h1,
 h2,
@@ -72,7 +73,7 @@ figure {
   border-block-end: 1px solid currentColor;
   border-inline-start: 1px solid currentColor;
   margin-block-end: var(--mar_padd_);
-  align-self: end; 
+  align-self: end;
 }
 
 .decoration__element-rec {
@@ -80,7 +81,6 @@ figure {
   position: absolute;
   inset-block-start: calc(9px + var(--additional_margin_rec, 0));
   inset-inline-end: calc(17px + var(--additional_margin_rec, 0));
-  color: var(--accent-color)
 }
 
 .decoration__element-rec:before {
@@ -101,7 +101,6 @@ figure {
 .header__title {
   font-size: var(--h1-font_size);
   line-height: 6rem;
-  align-self: start;
   text-shadow: var(--shadow_title, 4px 4px) var(--accent-color);
   color: var(--title-color);
   font-weight: 700;
@@ -114,9 +113,6 @@ figure {
   color: var(--background-color);
   inline-size: var( --title-text_inline_size);
   align-self: end;
-}
-
-.header__text p {
   background-color: var(--accent-color);
 }
 
@@ -225,10 +221,6 @@ span {
   display: block;
 }
 
-section p {
-  margin-block-end: 20px;
-}
-
 .content__figure {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -271,14 +263,14 @@ section p {
 
 @media (768px <= width) {
   .header__text {
-    align-self: flex-end;
+    justify-self: end;
   }
 
   section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-block-start: 80px;
-
+    column-gap: 20px;
   }
   
   section:first-child {
@@ -304,6 +296,7 @@ section p {
   section:nth-child(even) h2 {
     grid-column: span 3;
     grid-row: 1;
+    inline-size: calc(100% / 3);
   }
 
   section:last-child {
