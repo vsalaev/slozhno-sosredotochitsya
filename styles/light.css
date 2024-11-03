@@ -6,8 +6,6 @@
   --background: url(../images/cover-image-light.png);
 }
 
-/* Остальные стили */
-
 .theme_light  .decoration__element-rec {
   display:none;
 }
@@ -23,7 +21,6 @@
   --text-color: #353430;
   --accent-color: #ff8dcb;  
   --background: url(../images/cover-image-light.png);
-      /* Дублируем переменные светлой темы */    
   }
 
   .theme_auto :is(.decorated-zone, .header__text, .header__theme-menu-button, h2, h3, span) {
@@ -32,17 +29,8 @@
 
   .theme_auto  .decoration__element-rec {
   display:none;
+  }
 }
-
-
-}
-
-/* Остальные стили */ 
-
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
 
 
 

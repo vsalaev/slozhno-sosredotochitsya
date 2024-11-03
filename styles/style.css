@@ -7,6 +7,7 @@ html {
   font-size: 16px;
 }
 
+body,
 p,
 h1,
 h2,
@@ -19,10 +20,8 @@ li,
 figure {
   margin: 0;
 }
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-size: 18px;
   min-inline-size: var(--min-inline-size);
   font-family: 'IBM Plex mono';
@@ -31,6 +30,7 @@ figure {
   margin-inline: var(--mar_padd_);
   margin-block: 0;
   background-color: var(--background-color);
+  background-attachment: fixed;
 }
 
 .header {
@@ -52,7 +52,7 @@ figure {
   color: var(--text-color);
 }
 
-.decorated-zone:before{
+.decorated-zone:before {
   content: '';
   inline-size: 25px;
   block-size: 25px;
@@ -130,7 +130,7 @@ figure {
   align-items: flex-end;
 }
 
-.header__theme-menu-item{
+.header__theme-menu-item {
   color: var(--accent-color);
 }
 
@@ -229,7 +229,6 @@ section p {
   gap: 20px;
   align-items: stretch;
   grid-auto-flow: row;
-  grid-auto-flow: row;
 }
 
 .content__figure h3 {
@@ -262,9 +261,6 @@ section p {
     display: flex;
     flex-direction: column;
    }
-
-   
-  
 }
 
 @media (768px <= width) {
@@ -275,6 +271,12 @@ section p {
   section {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-block-start: 80px;
+
+  }
+  
+  section:first-child {
+    margin-block-start: 60px;
   }
 
   section h2 {
@@ -302,28 +304,13 @@ section p {
     grid-auto-flow: row;
     row-gap: 20px;
     align-items: stretch;
-  }
-
-  section {
-    margin-block-start: 80px;
-  }
-  
-  section:first-child {
-    margin-block-start: 60px;
-  }
-
-  section:last-child {
     margin-block-end: 60px;
   }
- 
 }
 
 @media (768px <= width ) and (orientation: portrait) {
   section:nth-child(even):not(:last-child) {
     display:block;
   }
-
-
-  
 }
 
