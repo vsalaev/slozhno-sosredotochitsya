@@ -267,9 +267,17 @@ span {
     display: flex;
     flex-direction: column;
    }
+
+  section p:first-of-type span {
+    margin-block-start: 20px;
+    }
 }
 
 @media (768px <= width) {
+  .header__title {
+    inline-size: calc(100dvw - 40px);
+  }
+
   .header__text {
     justify-self: end;
   }
@@ -313,6 +321,10 @@ span {
     align-items: stretch;
     margin-block-end: 60px;
   }
+
+  section p:first-of-type span {
+    margin-block-start: 10px;
+    }
 }
 
 @media (768px <= width ) and (orientation: portrait) {
@@ -321,11 +333,7 @@ span {
   }
 }
 
-@media (768px <= width ) and (orientation: landscape) { 
-  section p:first-of-type span {
-  margin-block-start: 10px;
-  }
-
+@media (768px <= width ) and (orientation: landscape) {
   section:nth-child(even) h2 {
     inline-size: calc(100% / 3);
   }
