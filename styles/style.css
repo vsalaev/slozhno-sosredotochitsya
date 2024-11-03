@@ -167,8 +167,16 @@ figure {
 }
 
 section {
-  margin-block-end: 50px;
   line-height: 23.4px;
+  margin-block-start: 50px;
+}
+
+section:first-child {
+  margin-block-start: 40px;
+}
+
+section:last-child {
+  margin-block-end: 40px;
 }
 
 section h2,
@@ -254,6 +262,8 @@ section p {
     display: flex;
     flex-direction: column;
    }
+
+   
   
 }
 
@@ -293,6 +303,18 @@ section p {
     row-gap: 20px;
     align-items: stretch;
   }
+
+  section {
+    margin-block-start: 80px;
+  }
+  
+  section:first-child {
+    margin-block-start: 60px;
+  }
+
+  section:last-child {
+    margin-block-end: 60px;
+  }
  
 }
 
@@ -300,5 +322,8 @@ section p {
   section:nth-child(even):not(:last-child) {
     display:block;
   }
+
+
+  
 }
 
