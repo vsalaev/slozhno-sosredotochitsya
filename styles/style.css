@@ -8,9 +8,13 @@ html {
   font-size: 16px;
 }
 
-body,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 p,
-h1
+h1,
 h2,
 h3,
 h4,
@@ -80,8 +84,8 @@ figure {
 .decoration__element-rec {
   display: block;
   position: absolute;
-  inset-block-start: calc(13px + var(--additional_margin_rec, 0));
-  inset-inline-end: calc(16px + var(--additional_margin_rec, 0));
+  inset-block-start: calc(11px + var(--additional_margin_rec, 0));
+  inset-inline-end: calc(18px + var(--additional_margin_rec, 0));
 }
 
 .decoration__element-rec:before {
@@ -96,7 +100,7 @@ figure {
   border: 5px solid;
   border-radius: 5px;
   display: inline-block;
-  margin-inline-start: 13.5px;
+  margin-inline-start: 10px;
  }
 
 .header__title {
@@ -119,7 +123,7 @@ figure {
 
 .header__theme-menu {
     position: var(--menu-position);
-    inset-block-end: 123px;
+    inset-block-end: 138px;
     align-self: center;
 }
 
@@ -288,7 +292,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-block-start: 80px;
-    column-gap: 20px;
+    column-gap: 10px;
   }
   
   section:first-child {
@@ -332,7 +336,6 @@ span {
     inline-size: calc(100vw - 40px);
   }
   
-    
 }
 
 @media (768px <= width ) and (orientation: portrait) {
@@ -347,8 +350,6 @@ span {
   footer.decorated-zone {
     grid-template-rows: calc(25px + var(--mar_padd_)) 1fr calc(25px + var(--mar_padd_));
   }
-
-
 }
 
 @media (768px <= width ) and (orientation: landscape) {
@@ -357,8 +358,7 @@ span {
   }
 
   .decorated-zone {
-    grid-template-rows: calc(25px + var(--mar_padd_)) 1fr 1fr 1fr calc(25px + var(--mar_padd_));
-  }
+    grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.32421875* 100dvh) 1fr calc(0.32421875* 100dvh) calc(25px + var(--mar_padd_));  }
 
   footer.decorated-zone {
     grid-template-rows: calc(25px + var(--mar_padd_)) 1fr calc(25px + var(--mar_padd_));
