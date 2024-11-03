@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -357,12 +359,13 @@ span {
 }
 
 @media (768px <= width ) and (orientation: landscape) {
-  section:nth-child(even) h2 {
+    section:nth-child(even) h2 {
     inline-size: calc(100% / 3);
   }
 
   .decorated-zone {
-    grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.32421875* 100dvh) 1fr calc(0.32421875* 100dvh) calc(25px + var(--mar_padd_));  }
+    grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.32421875* 100dvh) 1fr calc(0.32421875* 100dvh) calc(25px + var(--mar_padd_));
+  }
 
   footer.decorated-zone {
     grid-template-rows: calc(25px + var(--mar_padd_)) 1fr calc(25px + var(--mar_padd_));
