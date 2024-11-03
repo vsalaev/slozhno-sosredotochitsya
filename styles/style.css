@@ -54,6 +54,7 @@ figure {
   block-size: 100dvh;
   color: var(--text-color);
   display: grid;
+  grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.266467* 100dvh) 1fr calc(0.266467* 100dvh) calc(25px + var(--mar_padd_));
 }
 
 .decorated-zone:before {
@@ -79,8 +80,8 @@ figure {
 .decoration__element-rec {
   display: block;
   position: absolute;
-  inset-block-start: calc(9px + var(--additional_margin_rec, 0));
-  inset-inline-end: calc(17px + var(--additional_margin_rec, 0));
+  inset-block-start: calc(13px + var(--additional_margin_rec, 0));
+  inset-inline-end: calc(16px + var(--additional_margin_rec, 0));
 }
 
 .decoration__element-rec:before {
@@ -104,7 +105,7 @@ figure {
   text-shadow: var(--shadow_title, 4px 4px) var(--accent-color);
   color: var(--title-color);
   font-weight: 700;
-  align-self: end;
+  align-self: center;
 }
 
 .header__text {
@@ -112,14 +113,14 @@ figure {
   font-weight: 700;
   color: var(--background-color);
   inline-size: var( --title-text_inline_size);
-  align-self: end;
+  align-self: center;
   background-color: var(--accent-color);
 }
 
 .header__theme-menu {
     position: var(--menu-position);
-    inset-block-end: calc(100dvh - 46px);
-    inset-inline-start: calc(100dvw / 2 - 230px / 2);
+    inset-block-end: 123px;
+    align-self: center;
 }
 
 .header__theme-menu-list {
@@ -128,7 +129,7 @@ figure {
   display: flex;
   flex-direction: var(--menu-flex-direct);
   gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -276,6 +277,8 @@ span {
 @media (768px <= width) {
   .header__title {
     inline-size: calc(100dvw - 40px);
+    position: relative;
+    inset-inline-end: 20px;
   }
 
   .header__text {
@@ -331,6 +334,12 @@ span {
   section:nth-child(even):not(:last-child) {
     display:block;
   }
+
+  .decorated-zone {
+    grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.38085938 * 100dvh) 1fr calc(0.38085938 * 100dvh) calc(25px + var(--mar_padd_));
+  }
+
+
 }
 
 @media (768px <= width ) and (orientation: landscape) {
@@ -338,6 +347,9 @@ span {
     inline-size: calc(100% / 3);
   }
 
+  .decorated-zone {
+    grid-template-rows: calc(25px + var(--mar_padd_)) 1fr 1fr 1fr calc(25px + var(--mar_padd_));
+  }
 
 }
 

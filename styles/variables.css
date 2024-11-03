@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --background-color: #000028;
   --title-color: #DB00FF;
@@ -12,7 +17,7 @@
     --additional_margin_rec: 10px;
     --mar_padd_: 20px;
     --min-inline-size: 728px;
-    --menu-position: absolute;
+    --menu-position: relative;
     --menu-flex-direct: row;
     --h1-font_size: clamp(7.5rem, 0.5262rem + 14.5098vw, 9.8125rem);
     --title-text_inline_size: 50%;

@@ -11,6 +11,10 @@
   color: var(--accent-color)
 }
 
+.header_text {
+  color: var(--background-color);
+}
+
 /*
 .header p:before {
   content: '';
