@@ -350,6 +350,10 @@ span {
   footer.decorated-zone {
     grid-template-rows: calc(25px + var(--mar_padd_)) 1fr calc(25px + var(--mar_padd_));
   }
+
+  section {
+    column-gap: 20px;
+  }
 }
 
 @media (768px <= width ) and (orientation: landscape) {
