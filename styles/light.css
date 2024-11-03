@@ -15,21 +15,21 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .page.theme_auto {
-  --background-color: #FFF1F7;
-  --title-color: #FFC2E6;
-  --text-color: #353430;
-  --accent-color: #ff8dcb;  
-  --background: url(../images/cover-image-light.png);
-  }
+    .page.theme_auto {
+      --background-color: #FFF1F7;
+      --title-color: #FFC2E6;
+      --text-color: #353430;
+      --accent-color: #ff8dcb;  
+      --background: url(../images/cover-image-light.png);
+    }
 
-  .theme_auto :is(.decorated-zone, .header__text, .header__theme-menu-button, h2, h3, span) {
-    color: var(--text-color);
-  }
+    .theme_auto :is(.decorated-zone, .header__text, .header__theme-menu-button, h2, h3, span) {
+      color: var(--text-color);
+    }
 
-  .theme_auto  .decoration__element-rec {
-  display:none;
-  }
+    .theme_auto  .decoration__element-rec {
+      display:none;
+    }
 }
 
 
