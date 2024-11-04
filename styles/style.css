@@ -2,7 +2,6 @@
   font-size: 18px;
   min-inline-size: var(--min-inline-size);
   font-family: 'IBM Plex mono';
-  max-inline-size: 984px;
   color: var(--text-color);
   background-color: var(--background-color);
   background-attachment: fixed;
