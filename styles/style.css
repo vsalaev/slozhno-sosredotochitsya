@@ -14,7 +14,6 @@
   background-size: cover;
   position: relative;
   inline-size: calc(100dvw - var(--mar_padd_)*2);
-  inset-inline-end: var(--mar_padd_);
   padding-inline: var(--mar_padd_);
   z-index: 1;
   justify-content: space-between;
@@ -25,6 +24,10 @@
   color: var(--text-color);
   display: grid;
   grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.266467* 100dvh) 1fr calc(0.266467* 100dvh) calc(25px + var(--mar_padd_));
+}
+
+main {
+  padding-inline: var(--mar_padd_);
 }
 
 .footer.decorated-zone {
@@ -228,6 +231,10 @@ span {
 .content__picture:nth-of-type(3) {
   grid-row: span 2;
   object-fit: cover;
+}
+
+.footer {
+  padding-inline: var(--mar_padd_);
 }
 
 .footer .header__title {
