@@ -28,6 +28,12 @@
 }
 
 
-:is(.theme_dark, .theme_auto) .decorated-zone {
+.page.theme_dark > .decorated-zone {
   --text-color: var(--accent-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page.page.theme_auto > .decorated-zone {
+    --text-color: var(--accent-color);
+  }
 }

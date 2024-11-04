@@ -239,7 +239,6 @@ span {
 }
 
 .footer .header__title {
-  --shadow_title: 2px 2px;
   align-self: center;
   justify-self: center;
 }

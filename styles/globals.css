@@ -44,3 +44,7 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+:root {
+  color-scheme: light;
+}

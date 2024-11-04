@@ -3,9 +3,11 @@
   --title-color: #DB00FF;
   --text-color: #F1B2CE;
   --accent-color: #ff0070;
+  --accent-color2: #FF0070;
   --background: url(../images/cover-image-dark.png);
   --letter-spacing: none;
   --word-spacing: none;
+  --shadow_title: 2px 2px;
 }
 
 
@@ -44,7 +46,6 @@
 
 @media (orientation: landscape) {
   .header__title {
-    --accent-color: var(--accent-color2);
     --letter-spacing: -0.01em;
     --word-spacing: -0.01em;
   }
