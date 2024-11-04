@@ -36,7 +36,7 @@ p {
   background-position: center;
   background-size: cover;
   position: relative;
-  inline-size: calc(100dvw);
+  inline-size: calc(100dvw - var(--mar_padd_)*2);
   inset-inline-end: var(--mar_padd_);
   padding-inline: var(--mar_padd_);
   z-index: 1;
