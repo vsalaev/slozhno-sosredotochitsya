@@ -5,17 +5,17 @@
   color: var(--text-color);
   background-color: var(--background-color);
   background-attachment: fixed;
-}
-
-.header {
   background-image: var(--background);
   background-position: center;
   background-size: cover;
-  position: relative;
-  inline-size: calc(100dvw - var(--mar_padd_)*2);
+}
+
+.header {
+  /*position: relative;
+  inline-size: calc(100dvw - var(--mar_padd_)*2);*/
   padding-inline: var(--mar_padd_);
-  z-index: 1;
-  justify-content: space-between;
+  /*z-index: 1;
+  justify-content: space-between;*/
 }
 
 .decorated-zone {
@@ -162,10 +162,12 @@ section h2,
 section h3 {
   font-size: 18px;
   font-weight: 700;
+  letter-spacing: var(--letter-spacing);
 }
 
 section p {
   margin-block-end: 20px;
+  word-spacing: var(--word-spacing);
 }
 
 section p:last-child {

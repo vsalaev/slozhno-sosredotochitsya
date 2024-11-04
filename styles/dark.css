@@ -15,8 +15,8 @@
   color: var(--background-color);
 }
 
-/*
-.header p:before {
+
+.page:before {
   content: '';
   position: absolute;
   top: 0;
@@ -26,7 +26,7 @@
   background: rgb(from var(--background-color) r g b / .5);
   z-index: -1;
 }
-*/
+
 
 :is(.theme_dark, .theme_auto) .decorated-zone {
   --text-color: var(--accent-color);

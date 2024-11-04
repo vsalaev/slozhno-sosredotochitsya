@@ -4,6 +4,8 @@
   --text-color: #F1B2CE;
   --accent-color: #ff0070;
   --background: url(../images/cover-image-dark.png);
+  --letter-spacing: none;
+  --word-spacing: none;
 }
 
 
@@ -35,6 +37,16 @@
   :root {
     --menu-position: static;
     --menu-flex-direct: column;
+    --letter-spacing: none;
+    --word-spacing: none;
+  }
+}
+
+@media (orientation: landscape) {
+  .header__title {
+    --accent-color: var(--accent-color2);
+    --letter-spacing: -0.01em;
+    --word-spacing: -0.01em;
   }
 }
 
