@@ -25,10 +25,6 @@
       --background: url(../images/cover-image-light.png);
     }
 
-    .page.theme_auto :is(.decorated-zone, .header__text, .header__theme-menu-button, h2, h3, span) {
-      --background-color: var(--text-color);
-    }
-
     .page.theme_auto .decoration__element-rec {
     display:none;
     }
