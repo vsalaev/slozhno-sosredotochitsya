@@ -6,7 +6,10 @@
   box-sizing: border-box;
 }
 
-body,
+body {
+  margin: a auto;
+}
+
 h1,
 h2,
 h3,
