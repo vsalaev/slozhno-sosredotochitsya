@@ -1,22 +1,10 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .page {
   font-size: 18px;
   min-inline-size: var(--min-inline-size);
   font-family: 'IBM Plex mono';
   max-inline-size: 984px;
   color: var(--text-color);
-  margin-inline: var(--mar_padd_);
+  padding-inline: var(--mar_padd_);
   margin-block: 0;
   background-color: var(--background-color);
   background-attachment: fixed;
