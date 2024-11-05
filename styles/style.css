@@ -31,7 +31,6 @@
 
 .decorated-zone {
   block-size: 100dvh;
-  color: var(--text-color);
   display: grid;
   grid-template-rows: calc(25px + var(--mar_padd_)) calc(0.266467* 100dvh) 1fr calc(0.266467* 100dvh) calc(25px + var(--mar_padd_));
 }
@@ -98,7 +97,6 @@ main {
 .header__text {
   line-height: 23.4px;
   font-weight: 700;
-  color: var(--background-color);
   inline-size: var( --title-text_inline_size);
   align-self: center;
   background-color: var(--accent-color);

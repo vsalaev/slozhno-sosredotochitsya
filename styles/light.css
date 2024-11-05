@@ -8,11 +8,16 @@
   --transparency_level: 0;
 }
 
-.page.theme_light  .decoration__element-rec {
+.decoration__element-rec {
   display:none;
 }
 
-.page.theme_light :is(.decorated-zone, .header__text, .header__theme-menu-button, h2, h3, span) {
+.decorated-zone,
+.header__text,
+.header__theme-menu-button,
+h2,
+h3,
+span {
   color: var(--text-color);
 }
 
@@ -21,6 +26,4 @@
     --accent-color: var(--accent-color2);
   }
 }
-
-
 

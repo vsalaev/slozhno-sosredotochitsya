@@ -7,20 +7,15 @@
   --transparency_level: .5;
 }
 
-:where(.theme_dark, .theme_auto) .decoration__element-rec {
-  color: var(--accent-color);
-}
-
-.page.theme_dark .header_text {
-  color: var(--background-color);
+.page.theme_dark .header__text {
+  --text-color: var(--background-color);
 }
 
 .page.theme_dark .decoration__element-rec {
-  color: var(--accent-color);
   display:block;
   }
 
-.page.theme_dark > .decorated-zone {
+.page.theme_dark .decorated-zone {
   --text-color: var(--accent-color);
 }
 
@@ -34,8 +29,11 @@
     --transparency_level: .5;
   }
 
-  .page.theme_auto > .decorated-zone {
-    color: var(--accent-color);
+  .page.theme_auto .header__text {
+    --text-color: var(--background-color);
+  }
+
+  .page.theme_auto .decorated-zone {
     --text-color: var(--accent-color);
   }
 
