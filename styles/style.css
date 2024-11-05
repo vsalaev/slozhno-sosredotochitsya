@@ -1,9 +1,3 @@
-body {
-  margin: 0;
-}
-
-
-
 .page {
   font-size: 18px;
   min-inline-size: var(--min-inline-size);
@@ -71,7 +65,7 @@ main {
 }
 
 .decoration__element-rec {
-  display: block;
+  display: none;
   position: absolute;
   inset-block-start: calc(11px + var(--additional_margin_rec, 0));
   inset-inline-end: calc(18px + var(--additional_margin_rec, 0));
