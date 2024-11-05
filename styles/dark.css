@@ -20,7 +20,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root,
   .page.theme_auto {
     --background-color: #000028;
     --title-color: #DB00FF;
@@ -30,15 +29,15 @@
     --transparency_level: .5;
   }
 
-  :is(.page.theme_auto, :root) .header__text {
+  .page.theme_auto .header__text {
     --text-color: var(--background-color);
   }
 
-  :is(.page.theme_auto, :root) .decorated-zone {
+  .page.theme_auto .decorated-zone {
     --text-color: var(--accent-color);
   }
 
-  :is(.page.theme_auto, :root) .decoration__element-rec {
+  .page.theme_auto .decoration__element-rec {
     display:block;
     }
 }
