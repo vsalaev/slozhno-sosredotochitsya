@@ -44,14 +44,3 @@
     }
 }
 
-@media (prefers-color-scheme: light) {
-  .page.theme_auto {
-    --background-color: #FFF1F7;
-    --title-color: #FFC2E6;
-    --text-color: #353430;
-    --accent-color: #ff8dcb;
-    --accent-color2: #FF0070;
-    --background: url(../images/cover-image-light.png);
-  }
-}
-
