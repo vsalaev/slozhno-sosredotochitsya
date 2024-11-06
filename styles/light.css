@@ -3,38 +3,14 @@
   --title-color: #FFC2E6;
   --text-color: #353430;
   --accent-color: #ff8dcb;
-  --accent-color2: #FF0070;
   --background: url(../images/cover-image-light.png);
   --transparency_level: 0;
 }
 
-.header__theme-menu-button {
-  color: var(--text-color);
-}
-
-.header__text {
-  color: var(--text-color);
-}
-
-.decorated-zone {
-  color: var(--text-color);
-}
-
-.decoration__element-rec {
-  display:none;
-}
-
-h2 {
-  color: var(--text-color);
-}
-
-h3 {
-  color: var(--text-color);
-}
 
 @media  (orientation: landscape) {
   .header__title {
-    --accent-color: var(--accent-color2);
+    --accent-color: #FF0070;
   }
 }
 
