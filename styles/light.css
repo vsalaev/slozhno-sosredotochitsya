@@ -8,16 +8,27 @@
   --transparency_level: 0;
 }
 
+.header__theme-menu-button {
+  color: var(--text-color);
+}
+
+.header__text {
+  color: var(--text-color);
+}
+
+.decorated-zone {
+  color: var(--text-color);
+}
+
 .decoration__element-rec {
   display:none;
 }
 
-.decorated-zone,
-.header__text,
-.header__theme-menu-button,
-h2,
-h3,
-span {
+h2 {
+  color: var(--text-color);
+}
+
+h3 {
   color: var(--text-color);
 }
 

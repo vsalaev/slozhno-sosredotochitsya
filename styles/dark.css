@@ -4,7 +4,6 @@
   --text-color: #F1B2CE;
   --accent-color: #ff0070;
   --background: url(../images/cover-image-dark.png);
-  --transparency_level: .5;
 }
 
 .page.theme_dark .header__text {
@@ -20,24 +19,23 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .page.theme_auto {
+  .page {
     --background-color: #000028;
     --title-color: #DB00FF;
     --text-color: #F1B2CE;
     --accent-color: #ff0070;
     --background: url(../images/cover-image-dark.png);
-    --transparency_level: .5;
   }
 
-  .page.theme_auto .header__text {
+  .header__text {
     --text-color: var(--background-color);
   }
 
-  .page.theme_auto .decorated-zone {
+  .decorated-zone {
     --text-color: var(--accent-color);
   }
 
-  .page.theme_auto .decoration__element-rec {
+  .decoration__element-rec {
     display:block;
     }
 }
