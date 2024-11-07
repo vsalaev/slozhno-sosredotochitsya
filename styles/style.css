@@ -102,6 +102,10 @@ align-items: flex-end;
   outline: 1px solid currentColor;
 }
 
+
+
+
+
 .header__theme-menu-button:focus {
   border: none;
   outline: none;
@@ -111,10 +115,6 @@ align-items: flex-end;
   border: none;
   outline: none;
 }
-
-
-
-
 
 .header__theme-menu-button:active {
   border: none;
@@ -126,10 +126,6 @@ align-items: flex-end;
   outline: 1px solid currentColor;
 }
 
-.header__theme-menu-button:focus-visible {
-  border: none;
-  outline: 1px solid currentColor;
-}
 
 
 
