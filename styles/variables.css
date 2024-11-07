@@ -6,6 +6,7 @@
   --accent-color2: #FF0070;
   --background: url(../images/cover-image-light.png);
   --decoration__display: none;
+  --menu-align: center;
 }
 
 @media (768px <= width) {
@@ -45,6 +46,9 @@
   .header__title {
     --letter-spacing: -0.01em;
     --word-spacing: -0.01em;
+  }
+  .header__theme-menu {
+    --menu-align: start;
   }
 }
 

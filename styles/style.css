@@ -63,8 +63,8 @@
 
 .header__theme-menu {
   position: var(--menu-position);
-  inset-block-end: 138px;
-  align-self: center;
+  inset-block-end: 26px;
+  align-self: var(--menu-align);
 }
 
 .header__theme-menu-list {
@@ -102,20 +102,6 @@ align-items: flex-end;
   outline: 1px solid currentColor;
 }
 
-
-
-
-
-.header__theme-menu-button:focus {
-  border: none;
-  outline: none;
-}
-
-.header__theme-menu-button:focus-visible {
-  border: none;
-  outline: none;
-}
-
 .header__theme-menu-button:active {
   border: none;
   outline: 1px solid currentColor;
@@ -126,8 +112,17 @@ align-items: flex-end;
   outline: 1px solid currentColor;
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+  border-block-end: 1px solid currentColor;
+  block-size: 26px;
+}
 
-
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid currentColor;
+  block-size: 26px;
+}
 
 .header__title {
   font-size: var(--h1-font_size);
@@ -170,22 +165,13 @@ a:hover {
   border-block-end: 1px solid;
 }
 
-
-
-
-
-
 a:focus {
-  border-block-end: 1px solid;
+  outline: 1px solid;
 }
 
 a:focus-visible {
-  border-block-end: 1px solid;
+  outline: 1px solid;
 }
-
-
-
-
 
 h2 {
   font-size: 18px;
