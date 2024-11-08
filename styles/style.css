@@ -92,12 +92,6 @@ align-items: flex-end;
   padding: 4px 13.5px;
 }
 
-
-
-
-
-
-
 .header__theme-menu-button_active {
   border: none;
   outline: 1px solid currentColor;
@@ -111,6 +105,7 @@ align-items: flex-end;
 .header__theme-menu-button:hover {
   border: none;
   outline: 1px solid var(--hover_border-color);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
