@@ -120,6 +120,11 @@ align-items: flex-end;
   block-size: 26px;
 }
 
+.header__theme-menu-button_active:hover {
+  border: none;
+  outline: 1px solid currentColor;
+}
+
 .header__title {
   font-size: var(--h1-font_size);
   line-height: 6rem;
