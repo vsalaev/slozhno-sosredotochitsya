@@ -7,6 +7,8 @@
   --background: url(../images/cover-image-light.png);
   --decoration__display: none;
   --menu-align: center;
+  --hover_border-transporation_level: 0.4;
+  --hover_border-color: rgb(from var(--accent-color) r g b / var(--hover_border-transporation_level));
 }
 
 @media (768px <= width) {
