@@ -14,7 +14,7 @@
   --text-color: var(--accent-color);
 }
 
-.page.theme_dark > .section.content__figure > h2 {
+.page.theme_dark .section.content__figure > h2 {
   --text-color: var(--background-color);
 }
 
